@@ -3,15 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+* a{
+  color: white;
+  text-decoration: none;
 }
 body{
   background-color: black;
 }
 
-/* .mainNetflixCointainer{
-   border: 2px solid red; 
-   padding: 0rem 2rem; 
-} */
+
 .backgroundcontainer{
   background-image: url(banner.jpg);
   filter: blur(16px);
@@ -33,6 +35,8 @@ body{
 nav{
   /* border: 2px solid rgb(9, 255, 0); */
   height: 20vh;
+  position: fixed;
+  z-index:1000;
 }
 
 .uppernav{
@@ -92,7 +96,7 @@ font-size: 1rem;
 .lowernav{
   /* border: 2px solid rgb(214, 20, 20); */
   height: 50%;
-  color: rgb(183, 202, 15);
+  color: rgb(252, 252, 252);
   display:flex;
   justify-content: center;
 
@@ -105,8 +109,9 @@ font-size: 1rem;
  display: flex;
  justify-content: space-evenly;
  border-radius: 50px;
- background:rgba(0, 0, 0, 0.5) ;
+ background:rgba(0, 0, 0, 0.8) ;
  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.329);
+ backdrop-filter:blur(7px) ;
  height: 7vh;
 }
 .menulist li{
@@ -115,7 +120,9 @@ font-size: 1rem;
  display: flex;
  align-items: center;
 }
-
+.sectionContainer{
+  margin-top: 20vh;
+}
 .bannerSection{
  /* border :2px solid red; */
  height: 100vh;
@@ -216,7 +223,7 @@ color: #fff;
 .planContainer, 
 .reasonContainer,
 .faqCardsContainer{
-  border: 2px solid rgb(0, 119, 255);
+  /* border: 2px solid rgb(0, 119, 255); */
   height: 100%;
   width: 80%;
   display: flex;
@@ -353,9 +360,13 @@ width: 100%;
   flex-direction: column;
 }
 .getstartedSection{
-color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-bottom: 2rem;
+}
 
+.getstartedSection p{
+color: white;
+margin-bottom: 1rem;
 }
